@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <a id="abc">
+        <span class="abc">a</span>
+        <span class="abc">b</span>
+        <span class="abc">c</span>
+    </a>
+    <br>
+    <a id="xyz">
+        <i class="xyz">x</i>
+        <i class="xyz">y</i>
+        <i class="xyz">z</i>
+    </a>
+    
+
+    <script>
+        var abc = document.getElementsByClassName("abc");
+        var xyz = document.getElementsByTagName("i");
+        //document.write(abc[0].textContent);
+        //document.write(xyz.length);
+        for(var i=0; i<xyz.length;i++)
+    {
+        document.write(xyz[i].textContent+"<br>");
+    }
+    </script>
+
+</body>
+</html>

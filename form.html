@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form action="#" method="post">
+        <h2>Form with DOM</h2>
+        <input type="text" id="email" placeholder="Email"><br><br>
+        <input type="password" id="pswd" placeholder="Password"><br><br>
+        <input type="number" id="age" placeholder="Age"><br><br>
+        <input type="submit" id="submit" value="submit">
+    </form>
+    <script> 
+        var email = document.getElementById("email");
+        var pswd = document.getElementById("pswd");
+        var age = document.getElementById("age");
+        var submit = document.getElementById("submit");
+    
+        submit.onclick = function()
+        {
+            /*if(email.value != "" && pswd.value != "")
+        {
+            document.write("Success");
+        }*/
+        if(age.value >= 18 && age.value <= 40) //18-40
+        {
+         document.write("Success");
+        }
+    }
+
+    </script>
+</body>
+</html>

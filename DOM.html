@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #btn{
+                color: wheat;
+                background-color: crimson;
+                font-size: 18px;
+                padding: 8px;
+            }
+
+            .para{
+                font-size: 18px;
+                 color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">Click Me!</button>
+        <p class="para">My Name is Sufiyan. My DOB is 21 Feb. My country is Pakistan</p>
+        <script>
+        var btn = document.getElementById("btn");
+        btn.style.color = "Black";
+        btn.style.backgroundColor = "Yellow";
+        btn.style.border = "2px solid brown";
+
+        var para = document.getElementsByClassName("para")[0];
+
+        para.style.color = "green";
+        </script>
+    </body>
+</html>
